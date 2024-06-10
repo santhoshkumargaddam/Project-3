@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Example</title>
+    <style>
+        /* CSS for styling the navigation menu */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(5, 4, 4);
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: rgb(16, 15, 15);
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            color: #000000;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: fixed;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .marquee p {
+            display: inline-block;
+            padding-right: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to Our WestSide Footwear</h1>
+    <div class="marquee">
+        <p>This is a sample scrolling marquee ad. Check out our latest collection!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 WestSide. All Rights Reserved</p>
+    </footer>
+</body>
+</html>

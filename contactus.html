@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            h1{
+               text-shadow: 5px 5px 10px rgb(0, 0, 0);
+              }
+            body{
+                border: 2px solid black;
+                padding: 25px;
+                background: url(bg5.jpg);
+                background-repeat: no-repeat;
+                background-size: 1530px 767px;
+            }
+            @media screen and (min-width:320px )  {
+
+body {
+     background-color: rgb(241, 249, 249);
+}
+}    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(255, 244, 244);
+}
+}
+@media Screen and (min-width:1224px) {
+body {
+     background-color: rgb(241, 245, 239);
+}
+}
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(249, 247, 255);
+}
+}
+        </style>
+    <body>
+        <h1><center>Contact Us</center></h1>
+        <form align="center">
+            <label for="fname"> Name:</label><br>
+            <input type="text" id="fname" placeholder="First Name" name ="fname" autofocus><br>
+            <label for="lname">Phone Number:</label><br>
+            <form action="">
+                 <input type="tel"  name="personal" placeholder="Mobile Number" id="per1" pattern="[0-9]{10}" title=""the ten digits number><br>
+            <label for="fname">Email ID :</label><br>
+            <form action="#">
+                <input list="email" placeholder="Mail ID" name="mymails">
+                <datalist id="email">
+                    <option value="san@gamil.com"></option>
+                    <option value="san@yahoo.com"></option>
+                    <option value="san@hotmail.com"></option>
+                    <option value="san123@gmail.com"></option>
+                </datalist><br>
+            Message:<br><textarea name="mytest" cols="35" row="45">
+            </textarea><br>
+            <input type="submit" value="Send">
+    </form>
+    </body>
+</html>
